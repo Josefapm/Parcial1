@@ -1,0 +1,27 @@
+﻿@model List<Datos.Acciones>
+@{
+    ViewBag.Title = "Accesos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Accesos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">IdAccion</th>
+            <th scope="col">Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ foreach (var accion in Model)
+            {
+                <tr>
+                    <th scope="row" name="IdAccion" id="IdAccion">@accion.IdAccion</th>
+                    <td name="Descripcion" id="Descripcion">@accion.Descripcion</td>
+                </tr>
+
+                }
+            }
+        </tbody>
+</table>
