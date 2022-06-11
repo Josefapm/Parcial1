@@ -10,6 +10,7 @@ namespace Datos
         public Model1()
             : base("name=Model1")
         {
+
         }
 
         public virtual DbSet<Acciones> Acciones { get; set; }

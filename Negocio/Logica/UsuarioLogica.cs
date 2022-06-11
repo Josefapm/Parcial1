@@ -7,6 +7,7 @@ namespace Negocio.Logica
 {
     public class UsuarioLogica
     {
+        // Acás e agrega un comentario para mostrar el cambio en el repositorio GIT
         static Model1 dbContext = new Model1();
 
         public static bool ValidarLogin(String user, String password)
